@@ -16,20 +16,13 @@ void loop() {
     digitalWrite(13, LOW); //Button Not Pressed
   } else {
     digitalWrite(13, HIGH); //Button Pressed
-    printChar('K');
-    printChar('u');
-    printChar('r');
-    printChar('t');
-    printChar('s');
-    printChar(' ');
-    printChar('A');
-    printChar('r');
-    printChar('d');
-    printChar('u');
-    printChar('i');
-    printChar('n');
-    printChar('o');
-    printChar(' ');
+    printString("Kurt's Arduino Keyboard ");
+  }
+}
+
+void printString(String s){
+  for(int i = 0; i < s.length(); i++){
+    printChar(s[i]);
   }
 }
 
